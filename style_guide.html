@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Style Guide</title>
+		<link href="css/main.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Hind:400,300' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<h1><span class="headColor">Style Guide</span></h1>
+		<p>Katie Kim / 301150746 / nahyunk@sfu.ca</p>
+		<nav>
+			<a href="#buttons">Buttons</a>
+			<a href="#form">Form</a>
+			<a href="#text">Text</a>
+			<a href="#color">Color</a>
+			<a href="#image">Image</a>
+			<a href="#grouping">Navigation Bar</a>
+		</nav>
+
+		<section id="buttons">
+			<h2>Button</h2>
+			<h3>CSS selector</h3>
+			<p>'a.button'</p>
+			<h3>Code</h3>
+			<code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+			<h3>Rendered element</h3>
+			<a class="button" href="#">Button</a>
+		</section>
+
+		<section id="form">
+			<h2>Form</h2>
+			<h3>CSS selector</h3>
+			<p>'form'</p>
+			<h3>Code</h3>
+			<code>
+				&lt;form method="post" action="#"&gt;<br>
+			        &nbsp;&lt;div class="input-wrapper"&gt;<br>
+			          &nbsp;&lt;label for="search">Search&lt;label&gt;<br>
+			          &nbsp;&lt;input type="text" id="search" placeholder="search products, recipes, etc."&gt;<br>
+			          &nbsp;&lt;input type="submit" value="search"&gt;<br>
+			        &nbsp;&lt;/div&gt;<br>
+	      		&lt;/form&gt;<br>
+	      	</code>
+			<h3>Rendered element</h3>
+			<form method="post" action="#">
+		        <div class="input-wrapper">
+		          <input type="text" id="search" placeholder="search" size="30">
+		          <input type="submit" value="search">
+		        </div>
+	      </form>
+		</section>
+
+		<section id="text">
+			<h2>Text</h2>
+			<h3>CSS selector</h3>
+			<p>'.text'</p>
+			<h3>Code</h3>
+			<code>
+				&lt;h1 class="text"&gt;Heading&lt;/h1&gt;<br>
+				&lt;p class="text"&gt;ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz&lt;/p&gt;
+			</code>
+			<h3>Rendered element</h3>
+			<h1 class="text">Heading</h1>
+			<p class="text">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz</p>
+		</section>
+
+		<section id="color">
+			<h2>Color</h2>
+			<svg height="100" width="100">
+  				<circle cx="50" cy="50" r="40" stroke="none" stroke-width="3" fill="#8DC63F" />
+			</svg>
+			#8DC63F
+			<svg height="100" width="100">
+  				<circle cx="50" cy="50" r="40" stroke="none" stroke-width="3" fill="#726658" />
+			</svg>
+			#726658
+		</section>
+
+		<section id="image">
+			<h2>Image</h2>
+			<h3>CSS selector</h3>
+			<p>'.image'</p>
+			<h3>Code</h3>
+			<code>
+				&lt;img class="image" src="img/Dasies-BG.jpg" width="480" height="300" alt="Image from http://www.designlovefest.com/"&gt;<br>
+				&lt;img class="image" src="img/Avocados.jpg" width="480" height="300" alt="Image from http://www.designlovefest.com/"&gt;
+			</code>
+			<h3>Rendered element</h3>
+			<img class="image" src="img/Dasies-BG.jpg" width="480" height="300" alt="Image from http://www.designlovefest.com/">
+			<img class="image" src="img/Avocados.jpg" width="480" height="300" alt="Image from http://www.designlovefest.com/">
+		</section>
+
+		<section id="grouping">
+			<h2>Navigation Bar</h2>
+			<h3>CSS selector</h3>
+			<p>'a.navi'</p>
+			<h3>Code</h3>
+			<code>
+				&lt;nav class="grid"&gt;<br>
+					&nbsp;&lt;div class="col-3"&gt;<br>
+						&nbsp;&nbsp;&lt;a class="navi" href="#buttons"&gt;Buttons&lt;/a&gt;<br>
+					&nbsp;&lt;/div&gt;<br>
+					&nbsp;&lt;div class="col-3"&gt;<br>
+						&nbsp;&nbsp;&lt;a class="navi" href="#form"&gt;Form&lt;/a&gt;<br>
+					&nbsp;&lt;/div&gt;<br>
+					&nbsp;&lt;div class="col-3"&gt;<br>
+						&nbsp;&nbsp;&lt;a class="navi" href="#text"&gt;Text&lt;/a&gt;<br>
+					&nbsp;&lt;/div&gt;<br>
+				&lt;/nav&gt;
+			</code>
+			<h3>Rendered element</h3>
+			<nav>
+				<div class="col-3">
+					<a class="navi" href="#buttons">Buttons</a>
+				</div>
+				<div class="col-3">
+					<a class="navi" href="#form">Form</a>
+				</div>
+				<div class="col-3">
+					<a class="navi" href="#text">Text</a>
+				</div>
+			</nav>
+		</section>
+
+	</body>
+</html>
