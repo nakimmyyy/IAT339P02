@@ -10,14 +10,16 @@
 
 	<body>
 		<h1><span class="headColor">Style Guide</span></h1>
-		<p>Katie Kim / 301150746 / nahyunk@sfu.ca</p>
+		<p>Katie Kim + Milly Hoi</p>
 		<nav>
 			<a href="#buttons">Buttons</a>
+			<a href="#options">Options</a>
 			<a href="#form">Form</a>
 			<a href="#text">Text</a>
 			<a href="#color">Color</a>
 			<a href="#image">Image</a>
 			<a href="#grouping">Navigation Bar</a>
+			<a href="#progress-bar">Progress Bar</a>
 		</nav>
 
 		<section id="buttons">
@@ -28,6 +30,17 @@
 			<code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
 			<h3>Rendered element</h3>
 			<a class="button" href="#">Button</a>
+		</section>
+
+		<section id="options">
+			<h2>Select Options</h2>
+			<h3>CSS selector</h3>
+			<p>'.options'</p>
+			<h3>Code</h3>
+			<code>
+			</code>
+			<h3>Rendered element</h3>
+			
 		</section>
 
 		<section id="form">
@@ -47,8 +60,13 @@
 			<h3>Rendered element</h3>
 			<form method="post" action="#">
 		        <div class="input-wrapper">
-		          <input type="text" id="search" placeholder="search" size="30">
-		          <input type="submit" value="search">
+		        	Name
+		          	<input type="text" id="search" placeholder="First" size="20">
+		          	<input type="text" id="search" placeholder="Last" size="20"> <br>
+		          	Mobile
+		          	<input type="text" id="search" placeholder="Phone" size="40"> <br>
+		          	E-mail
+		          	<input type="text" id="search" placeholder="E-mail" size="40"> <br>
 		        </div>
 	      </form>
 		</section>
@@ -70,13 +88,17 @@
 		<section id="color">
 			<h2>Color</h2>
 			<svg height="100" width="100">
-  				<circle cx="50" cy="50" r="40" stroke="none" stroke-width="3" fill="#8DC63F" />
+  				<circle cx="50" cy="50" r="40" stroke="none" stroke-width="3" fill="#EA56A0" />
 			</svg>
-			#8DC63F
+			#EA56A0
 			<svg height="100" width="100">
-  				<circle cx="50" cy="50" r="40" stroke="none" stroke-width="3" fill="#726658" />
+  				<circle cx="50" cy="50" r="40" stroke="none" stroke-width="3" fill="#991F5C" />
 			</svg>
-			#726658
+			#991F5C
+			<svg height="100" width="100">
+  				<circle cx="50" cy="50" r="40" stroke="none" stroke-width="3" fill="#E6E6E6" />
+			</svg>
+			#E6E6E6
 		</section>
 
 		<section id="image">
@@ -85,8 +107,7 @@
 			<p>'.image'</p>
 			<h3>Code</h3>
 			<code>
-				&lt;img class="image" src="img/Dasies-BG.jpg" width="480" height="300" alt="Image from http://www.designlovefest.com/"&gt;<br>
-				&lt;img class="image" src="img/Avocados.jpg" width="480" height="300" alt="Image from http://www.designlovefest.com/"&gt;
+				&lt;img class="image" src="img/Dasies-BG.jpg" width="480" height="300" alt="Image from http://www.designlovefest.com/"&gt;
 			</code>
 			<h3>Rendered element</h3>
 			<img class="image" src="img/Dasies-BG.jpg" width="480" height="300" alt="Image from http://www.designlovefest.com/">
@@ -99,30 +120,50 @@
 			<p>'a.navi'</p>
 			<h3>Code</h3>
 			<code>
-				&lt;nav class="grid"&gt;<br>
-					&nbsp;&lt;div class="col-3"&gt;<br>
-						&nbsp;&nbsp;&lt;a class="navi" href="#buttons"&gt;Buttons&lt;/a&gt;<br>
-					&nbsp;&lt;/div&gt;<br>
-					&nbsp;&lt;div class="col-3"&gt;<br>
-						&nbsp;&nbsp;&lt;a class="navi" href="#form"&gt;Form&lt;/a&gt;<br>
-					&nbsp;&lt;/div&gt;<br>
-					&nbsp;&lt;div class="col-3"&gt;<br>
-						&nbsp;&nbsp;&lt;a class="navi" href="#text"&gt;Text&lt;/a&gt;<br>
+				&lt;nav&gt;<br>
+					&nbsp;&lt;div class="col-nav"&gt;<br>
+						&nbsp;&nbsp;&lt;a class="navi" href="#buttons"&gt;Home&lt;/a&gt;<br>
 					&nbsp;&lt;/div&gt;<br>
 				&lt;/nav&gt;
 			</code>
 			<h3>Rendered element</h3>
 			<nav>
-				<div class="col-3">
-					<a class="navi" href="#buttons">Buttons</a>
+				<div class="col-nav">
+					<a class="navi" href="#buttons">Home</a>
 				</div>
-				<div class="col-3">
-					<a class="navi" href="#form">Form</a>
+				<div class="col-nav">
+					<a class="navi" href="#form">Services</a>
 				</div>
-				<div class="col-3">
-					<a class="navi" href="#text">Text</a>
+				<div class="col-nav">
+					<a class="navi" href="#buttons">Gallery</a>
+				</div>
+				<div class="col-nav">
+					<a class="navi" href="#buttons">Designers</a>
+				</div>
+				<div class="col-nav">
+					<a class="navi" href="#buttons">Book Appointment</a>
+				</div>
+				<div class="col-nav">
+					<a class="navi" href="#buttons">Locations</a>
 				</div>
 			</nav>
+		</section>
+
+		<section id="progress-bar">
+			<h2>Progress Bar</h2>
+			<h3>CSS selector</h3>
+			<p>'#progress_bar'</p>
+			<h3>Code</h3>
+			<code>
+				&lt;div id="progress_bar"&gt;<br>
+  					&nbsp;&lt;div&gt;&lt;/div&gt;<br>
+				&lt;/div&gt;
+			</code>
+			<h3>Rendered element</h3>
+			Location  >  Service  >  Designer  >  Date  >  Your Info  >  Confirmation
+			<div id="progress_bar">
+  				<div></div>
+			</div>
 		</section>
 
 	</body>

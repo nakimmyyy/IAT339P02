@@ -1,0 +1,141 @@
+body {
+  font-family: 'Lato', sans-serif;
+  padding: 2rem;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.headColor {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #EA56A0;
+}
+
+section {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: dotted #991F5C;
+  clear: both;
+}
+
+section h2 {
+  color: #EA56A0;
+}
+
+section h3 {
+  margin-bottom: 0.3em;
+  color: #991F5C;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  display: inline-block;
+  background-color: #EEE;
+  padding: 0.5em 0.75em 0.5em 0.75em;
+  letter-spacing: 0px;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  background-color: #EA56A0;
+  padding: 0.3em 0.5em; 
+  border-radius: 0.5em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+a:hover, a:focus {
+  background-color: #991F5C;
+}
+
+a.button {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  font-weight: thin;
+  color: #FFF;
+  background-color: #EA56A0;
+  border-top: 2px;
+  border-bottom: 2px;
+  border-radius: 0.5em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+a.button:hover, a.button:focus {
+  background-color: #991F5C;
+}
+
+.options {
+  display: inline-block;
+  width: 50%;
+}
+
+.col-2 {
+  width: 100%;
+}
+
+
+form {
+  display: inline-block;
+  color: black;
+  padding: 0;
+}
+
+
+.input-wrapper {
+  margin: 0.5em 0 0 0.5em;
+}
+
+.text {
+  font-family: 'Hind', sans-serif;
+  font-weight: thin;
+  padding: 0;
+}
+
+.image {
+  float: left;
+  margin: 1em;
+  max-width: 100%;
+  height: auto;
+}
+
+a.navi {
+  display: inline-block;
+  float: left;
+  margin: 0.5em 0.2em 2em 0;
+  padding: 0.4em 0 0.4em 0;
+  width: 14%;
+  color: #FFF;
+  border-radius: 0;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.grid {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col-nav {
+  width: 100%;
+}
+
+#progress_bar {
+  background-color: #E6E6E6;
+  height: 0.5em;
+  width: 42.5%;
+  margin-top: 0.4em;
+}
+
+#progress_bar > div {
+  background-color: #EA56A0;
+  width: 30%;
+  height: 0.5em;
+  margin-top: 0.4em;
+}
