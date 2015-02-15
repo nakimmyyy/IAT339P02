@@ -79,16 +79,16 @@ a.button:hover, a.button:focus {
   width: 100%;
 }
 
-
 form {
   display: inline-block;
   color: black;
   padding: 0;
 }
 
-
 .input-wrapper {
   margin: 0.5em 0 0 0.5em;
+  width: 50%; 
+  
 }
 
 .text {
