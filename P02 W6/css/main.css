@@ -2,11 +2,53 @@
 
 
 body {
-	font-family: Arial, Verdana, sans-serif;
+	font-family: Raleway;
 	font-size: 1em; 
 	color: #3D3D3D;
 	padding: 1em;
 }
+
+@font-face {
+	font-family: PassionsConflict;
+	src: url(PassionsConflictROB.ttf);
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: Raleway;
+	src: url(Raleway/raleway.ttf);
+	text-decoration: none;
+}
+
+#logo img {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	margin-bottom: none;
+}
+
+#logo p {
+	font-size:0.8em;
+	color:#E697C3;
+	padding-bottom:3em;
+	text-align: center;
+}
+
+#logo h1 {
+	font-family: PassionsConflict;
+	color: #424343;
+	text-decoration: none;
+	font-size:6em;
+	text-align: center;
+	padding:0em;
+	margin-bottom: 0em;
+}
+
+#logo a {
+	text-decoration: none;
+}
+
 
 /*
 nav a {
@@ -16,6 +58,28 @@ nav a {
 	background-color: white;
 }
 */
+
+#navigation li {
+	list-style: none;
+	text-decoration: none;
+}
+
+#navigation li a {
+	text-decoration: none;
+}
+
+#navigation_container {
+
+}
+
+.ribbon {
+   background: #E697C3;
+   height: 40px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 5px;
+
+}
 
 h2 {
 	margin-left: auto;
@@ -30,22 +94,32 @@ h3 {
 	color: #DB0B86;
 }
 
+
+
 nav a, nav a:visited {
 	display: inline-block;
-	background-color: #D94E9C;
+	background-color: #E697C3;
 	color: #FFFFFF;
-	padding: 0.5em;
+	padding: 0.8em;
 	width: 99%;
 	font-size: 0.9em;
-	margin: 0.2em 0.5em 0 0;
+	margin: 0em;
 	text-decoration: none;
+	height:39px;
+	text-align: center;
+	border-top: dashed;
+	border-bottom: dashed;
+	border-width:1px;
+	border-spacing: 1px;
+
+	
 	-webkit-transition: background-color 0.5s;
 	transition: background-color 0.5s;
 }
 
 
 nav a:hover, nav a:focus {
-	background-color: #DB0B86;
+	background-color: #D94E9C;
 	color: white;
 }
 
