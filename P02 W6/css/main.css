@@ -2,20 +2,11 @@
 
 
 body {
-	font-family: Arial, Verdana, sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 1em; 
 	color: #3D3D3D;
 	padding: 1em;
 }
-
-/*
-nav a {
-	width: 100%;
-	font-size: 0.9em;
-	margin: 0.2em 0.2em 0 0;
-	background-color: white;
-}
-*/
 
 h2 {
 	font-weight: bold;
@@ -35,6 +26,15 @@ img {
 	margin-left: auto;
     margin-right: auto;
     width: 20%;
+}
+
+ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+form {
+	text-align: left;
 }
 
 nav a, nav a:visited {
@@ -132,6 +132,54 @@ nav a.back_button:hover, nav a.back_button:active, nav a.back_button:focus {
 #progress_bar_designer > div {
   background-color: #DB0B86;
   width: 48%;
+  height: 0.4em;
+  margin-top: 0.3em;
+  margin-bottom: 2em;
+}
+
+#progress_bar_date {
+  background-color: #E6E6E6;
+  height: 0.4em;
+  width: 37%;
+  margin-top: 0.3em;
+  margin-bottom: 2em;
+}
+
+#progress_bar_date > div {
+  background-color: #DB0B86;
+  width: 60%;
+  height: 0.4em;
+  margin-top: 0.3em;
+  margin-bottom: 2em;
+}
+
+#progress_bar_info {
+  background-color: #E6E6E6;
+  height: 0.4em;
+  width: 37%;
+  margin-top: 0.3em;
+  margin-bottom: 2em;
+}
+
+#progress_bar_info > div {
+  background-color: #DB0B86;
+  width: 78%;
+  height: 0.4em;
+  margin-top: 0.3em;
+  margin-bottom: 2em;
+}
+
+#progress_bar_confirm {
+  background-color: #E6E6E6;
+  height: 0.4em;
+  width: 37%;
+  margin-top: 0.3em;
+  margin-bottom: 2em;
+}
+
+#progress_bar_confirm > div {
+  background-color: #DB0B86;
+  width: 100%;
   height: 0.4em;
   margin-top: 0.3em;
   margin-bottom: 2em;

@@ -31,12 +31,20 @@
 	width: 10%;
 }
 
+.col-4 {
+	width: 40%;
+}
+
 .col-side {
 	width: 10%;
 }
 
 .col-side1 {
 	width: 20%;
+}
+
+.col-side2 {
+	width: 30%;
 }
 
 @media (max-width: 60em) {
