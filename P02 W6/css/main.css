@@ -19,6 +19,12 @@ h3 {
 	color: #DB0B86;
 }
 
+h4 {
+	font-weight: bold;
+	margin-bottom: 0.01em;
+	color: #DB0B86;
+}
+
 img {
 }
 
@@ -39,7 +45,7 @@ form {
 
 nav a, nav a:visited {
 	display: inline-block;
-	background-color: #D94E9C;
+	background-color: #E697C3;
 	color: #FFFFFF;
 	padding: 0.5em;
 	width: 99%;
@@ -62,14 +68,14 @@ nav a.options {
 	color: #3D3D3D;
 	border-radius: 0.8em;
 	border-style: solid;
-	border-color: #D94E9C;
+	border-color: #E697C3;
 	border-width: 0.1em;
 	-webkit-transition: background-color 0.5s ease-out;
 	transition: background-color 0.5s ease-out;
 }
 
 nav a.options:hover, nav a.options:active, nav a.options:focus {
-	background-color: #D94E9C;
+	background-color: #E697C3;
 	color: white;
 }
 
@@ -85,7 +91,7 @@ nav a.back_button {
 }
 
 nav a.back_button:hover, nav a.back_button:active, nav a.back_button:focus {
-	background-color: #D93E9C;
+	background-color: #E697C3;
 	color: white;
 }
 
