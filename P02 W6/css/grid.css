@@ -14,6 +14,13 @@
 	margin-right: auto;
 }
 
+[class^='hor-'] {
+	padding: 0.5em;
+	text-align: center; /* center the content in this block */
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .col-7of10 {
 	width: 14.2857%;
 }
@@ -35,6 +42,10 @@
 	width: 40%;
 }
 
+.col-5 {
+	width: 60%;
+}
+
 .col-side {
 	width: 10%;
 }
@@ -45,6 +56,10 @@
 
 .col-side2 {
 	width: 30%;
+}
+
+.hor-1 {
+	height: 15%;
 }
 
 @media (max-width: 60em) {

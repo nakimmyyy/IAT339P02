@@ -89,6 +89,61 @@ nav a.back_button:hover, nav a.back_button:active, nav a.back_button:focus {
 	color: white;
 }
 
+section {
+	border-bottom: dotted #D94E9C;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	text-align: left;
+}
+
+button {
+	color: gray;
+	font-size: 0.8em;
+	display: inline-block;
+	background-color: white;
+	border: double;
+	border-color: #E697C3;
+	margin: 1px;
+	width: 25em;
+}
+
+.onclick-menu {
+	position: relative;
+	display: inline-block;
+	padding-left: 2em;
+	padding-right: 15em;
+	background-color: white;
+	color: gray;
+}
+
+.onclick-menu:before {
+	content: " ";
+}
+
+.onclick-menu:focus {
+    /* clicking on label should toggle the menu */
+    pointer-events: none;
+    outline: none;
+}
+
+.onclick-menu:focus .onclick-menu-content {
+	/*  opacity is 1 in opened state (see below) */
+    opacity: 1;
+    visibility: visible;
+
+    /* don't let pointer-events affect descendant elements */
+    pointer-events: auto;
+
+}
+
+.onclick-menu-content {
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+	transition: visibility 0.5s;
+}
+
 #progress_bar_location {
   background-color: #E6E6E6;
   height: 0.4em;
