@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Test Expanding Menu</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  
+  <script language="JavaScript" type="text/JavaScript">
+  <!--
+  intImage = 2;
+  function swapImage1() {
+  
+  switch (intImage) {
+   case 1:
+     img1.src = "http://lib.store.yahoo.net/lib/yhst-68986320726817/menu-open.gif"
+     intImage = 2
+     return(false);
+   case 2:
+     img1.src = "http://lib.store.yahoo.net/lib/yhst-68986320726817/menu-close.gif"
+     intImage = 1
+     return(false);
+    }
+  }
+
+  menu_status = new Array();
+  
+  function showHide(theid){
+      if (document.getElementById) {
+      var switch_id = document.getElementById(theid);
+  
+          if(menu_status[theid] != 'show') {
+             switch_id.className = 'show';
+             menu_status[theid] = 'show';
+          }else{
+             switch_id.className = 'hide';
+             menu_status[theid] = 'hide';
+          }
+      }
+  }
+  //-->
+  </script>
+  <style type="text/css">
+  
+  #img1 {
+  test-decoration: none;
+  border: 0;
+  margin: 3px;
+  display: inline;
+  vertical-align:middle;
+  }
+  
+  .menu1 {
+  background-color:#ffc;
+  color: #b00;
+  margin-left: 5px;
+  text-decoration: none;
+  border: 0;
+  height: 20px;
+  }
+  
+  .submenu{
+  background-color: #ff8;
+  color: #b00;
+  display: block;
+  height: 19px;
+  margin-left: 38px;
+  padding-top: 2px;
+  padding-left: 7px;
+  }
+  
+  .hide{
+  display: none;
+  }
+  
+  .show{
+  display: block;
+  }
+  
+  #menu {
+  background-color: #ffc;
+  color: #b00;
+  width: 200px;
+  }
+  #menu ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  }
+  #menu li {
+  margin: 0;
+  padding: 0;
+  }
+  #menu a {
+  text-decoration: none;
+  font-size: 12pt;
+  font-weight: blod;
+  color: #b00;
+  }
+  </style>
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="menu">
+      <ul>
+        <li><a href="#" onclick="showHide('mymenu1')" class="menu1">
+    	  <img id="img1" name="img1" src="http://lib.store.yahoo.net/lib/yhst-68986320726817/menu-open.gif" width="14" height="14" alt="toggle menu expansion"
+            onclick="swapImage();" /></a><a href="#">Section 1</a>
+        </li>
+          <div id="mymenu1" class="hide">
+            <a href="#" class="submenu">Link One here</a>
+            <a href="#" class="submenu">Link Two here</a>
+            <a href="#" class="submenu">Link Three here</a>
+            <a href="#" class="submenu">Link Four here</a>
+          </div>
+      </ul>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

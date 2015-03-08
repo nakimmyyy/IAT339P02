@@ -5,7 +5,8 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Online Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Studio</title>
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -14,85 +15,115 @@
 
   </head>
 
-  <body>
+  <body background="img/bgimg.png">
   	<div class="center">
-		<a href="homepage.html"><img src="img/Minoko.jpg" width="250" height="221"></a>
+		<a href="homepage.html"><img src="img/Minoko.jpg" width="200" height="176"></a>
 	</div>
+
 	<nav class="grid">
-		<div class="col-7of10">
+		<div class="col-1_25of10">
 			&nbsp;
 		</div>
-		<div class="col-7of10">
-			<a href="">About</a>
+		<div class="col-1_25of10">
+			<a href="about.html">About</a>
 		</div>
-		<div class="col-7of10">
-			<a href="">Services</a>
+		<div class="col-1_25of10">
+			<a href="services-nav.html">Services</a>
 			</div>
-		<div class="col-7of10">
-			<a href="">Gallery</a>
+		<div class="col-1_25of10">
+			<a href="gallery.html">Gallery</a>
 			</div>
-		<div class="col-7of10">
+		<div class="col-1_25of10">
 			<a href="">Nail Designers</a>
 		</div>
-		<div class="col-7of10">
-			<a href="book_appointment.html">Book Appointment</a>
+		<div class="col-1_25of10">
+			<a href="book_appointment.html">Promotions</a>
 		</div>
-		<div class="col-7of10">
-			<a href="">Contact Us</a>
+		<div class="col-1_25of10">
+			<a href="book_appointment.html" class="book_appointment">Book Appointment</a>
 		</div>
-
+		<div class="col-1_25of10">
+			&nbsp;
+		</div>
 	</nav>
 
-	<h2>Online booking</h2> 
-		Location  >  Service  >  Designer  >  Date  >  Your Info  >  Confirmation
-	<div id="progress_bar_location">
-		<div></div>
+	<div class="grid">
+		<div class="col-1_25of10">&nbsp;</div>
+		<div class="col-1">
+			<h2>Online booking</h2>
+		</div>
+		<div class="col-6">
+				Location  >  Service  >  Designer  >  Date  >  Your Info  >  Confirmation
+			<div id="progress_bar_location">
+				<div></div>
+			</div>
+		</div>
 	</div>
-
 	<h3>Select a Store Location</h3>
 
 
 	<nav class="grid">
-		<div class="col-side1">
+		<div class="col-2of10">
 			&nbsp;
 		</div>
-		<div class="col-2of10">
+		<div class="col-3of10">
 			<a href="service.html" class="options">
 				<h3>Minoko Downtown</h3>
-				<p>
-					1253 Granville street<br>
-					Vancouver, British Columbia 
-					V6Z 1M5 <br>
-					Phone: (604) 757-5771 <br><br>
+					<li>1253 Granville street</li>
+					<li>Vancouver, British Columbia V6Z 1M5</li>
+					<li>Phone: (604) 757-5771</li>
 
 					<h4>Hours of Operation:</h4>
-					Monday - Friday: 10:30am - 7:00pm <br>
-					Saturday: 11:00am - 7:00pm <br>
-					Sunday: 12:00am - 6:00pm
-				</p>
+					<li>Monday - Friday: 10:30am - 7:00pm</li>
+					<li>Saturday: 11:00am - 7:00pm</li>
+					<li>Sunday: 12:00am - 6:00pm</li>
+			</a>
+		</div>
+		<div class="col-3of10">
+			<a href="service.html" class="options">
+				<h3>Minoko Burnaby</h3>
+					<li>4558 Kingsway</li>
+					<li>Burnaby, British Columbia V5H 2B1</li>
+					<li>Phone: (604) 725-6829</li>
+
+					<h4>Hours of Operation:</h4>
+					<li>Monday - Friday: 10:30am - 7:00pm</li>
+					<li>Saturday: 11:00 am - 7:00 pm</li>
+					<li>Sunday: 12:00 am - 6:00 pm</li>
 			</a>
 		</div>
 		<div class="col-2of10">
-			<a href="service.html" class="options">
-				<h3>Minoko Burnaby</h3>
-				<p>
-					4558 Kingsway<br>
-					Burnaby, British Columbia 
-					V5H 2B1 <br>
-					Phone: (604) 725-6829 <br><br>
-
-					<h4>Hours of Operation:</h4>
-					Monday - Friday: 10:30am - 7:00pm <br>
-					Saturday: 11:00 am - 7:00 pm <br>
-					Sunday: 12:00 am - 6:00 pm
-				</p>
-			</a>
-		</div>
-		<div class="col-side1">
 			&nbsp;
 		</div>
 	</nav>
 
+	<section class="footer">
+		<h3>Contact Us</h3>
+		<div class="col-4of10">
+			<h3>Minoko Downtown</h3>
+
+			<li>1253 Granville street</li>
+			<li>Vancouver, British Columbia V6Z 1M5</li>
+			<li>Phone: (604) 757-5771</li>
+
+			<h5>Hours of Operation:</h5>
+			<li>Monday - Friday: 10:30am - 7:00pm</li>
+			<li>Saturday: 11:00am - 7:00pm</li>
+			<li>Sunday: 12:00am - 6:00pm</li>
+		</div>
+		<div class="col-4of10">
+			<h3>Minoko Burnaby</h3>
+
+			<li>4558 Kingsway</li>
+			<li>Burnaby, British Columbia V5H 2B1</li>
+			<li>Phone: (604) 725-6829</li>
+
+			<h5>Hours of Operation:</h5>
+			<li>Monday - Friday: 10:30am - 7:00pm</li>
+			<li>Saturday: 11:00 am - 7:00 pm</li>
+			<li>Sunday: 12:00 am - 6:00 pm</li>
+		</div>
+	</section>
 
 
   </body>

@@ -1,68 +1,164 @@
 /* main */
 
-
 body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1em; 
 	color: #3D3D3D;
-	padding: 1em;
 }
 
+.fixed {
+	position: fixed;
+	z-index: -1;
+}
+
+.background {
+	background-color: white;
+}
+
+
+
+/* p */
+p {
+	text-align: left;
+	margin-bottom: 3em;
+}
+
+section p {
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 1.5em;
+}
+
+.col-6of10 p {
+	margin-top: 1.5em;
+	margin-left: 1em;
+}
+
+
+
+/* ul, li */
+ul {
+	list-style-type: none;
+	text-align: center;
+	margin-top: 1.3em;
+   color: #DB0B86;
+}
+
+li {
+	list-style-type: none;
+	margin-bottom: 0.1em;
+}
+
+.col-6 li {
+	list-style-type: none;
+	text-align: left;
+}
+
+.col-2of10 li {
+	padding-bottom: 1.5em;
+	font-weight: bold;
+}
+
+.col-4of10 li {
+	text-align: left;
+}
+
+
+
+/* headers */
 h2 {
 	font-weight: bold;
-	margin-top: 3em;
+	margin-top: 2em;
 }
 
 h3 {
 	font-weight: bold;
 	margin-bottom: 0.5em;
 	color: #DB0B86;
+	text-align: center;
+}
+
+.col-1of10 h3 {
+	text-align: center;
+	margin: 2em auto 2em auto;
+}
+
+.col-7 h3 {
+	text-align: right;
+	margin-right: 2.5em;
+}
+
+.footer h3 {
+	text-align: left;
 }
 
 h4 {
 	font-weight: bold;
 	margin-bottom: 0.01em;
 	color: #DB0B86;
-}
-
-
-.center {
-	margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-}
-
-ul {
-	list-style-type: none;
 	text-align: center;
-	margin-top: 1.3em;
-    color: #DB0B86;
 }
 
-div.col-5of10 li {
-	padding-bottom: 1.5em;
+section h5 {
 	font-weight: bold;
-}
-
-form {
+	color: #DB0B86;
 	text-align: left;
+	font-size: 1em;
+	margin-bottom: 0.3em;
 }
 
+
+
+/* img */
+section img {
+	margin: 1.5em 1em 1.5em 1em;
+	float: left;
+}
+
+.col-8 img, .col-9 img {
+	padding: 0;
+	margin-top: 3em;
+}
+
+.col-7 img {
+	margin: 1.5em 0 1.5em 0;
+	float: left;
+}
+
+.col-6of10 img {
+	margin: 3em 0 3em 0;
+	float: left;
+}
+
+.col-3of10 img {
+	margin: 2em auto 2em auto;
+	float: left;
+}
+
+
+
+/* nav */ 
 nav a, nav a:visited {
 	display: inline-block;
 	background-color: #E697C3;
 	color: #FFFFFF;
 	padding: 0.5em;
-	width: 99%;
+	width: 100%;
 	font-size: 0.9em;
 	margin: 0.2em 0.5em 0 0;
+	border: dashed white;
+	border-width: 1px;
+	border-radius: 2em;
 	text-decoration: none;
-	-webkit-transition: background-color 0.5s;
-	transition: background-color 0.5s;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
 }
 
+nav a.book_appointment {
+	background-color: #D94E9C;
+}
 
-nav a:hover, nav a:focus {
+nav a:hover, nav a:focus, nav a:active {
 	background-color: #DB0B86;
 	color: white;
 }
@@ -77,8 +173,8 @@ nav a.options {
 	border-width: 0.1em;
 	margin-top: 1em;
 	margin-bottom: 3em;
-	-webkit-transition: background-color 0.5s ease-out;
-	transition: background-color 0.5s ease-out;
+	-webkit-transition: background-color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
 }
 
 nav a.options:hover, nav a.options:active, nav a.options:focus {
@@ -92,7 +188,7 @@ nav a.back_button {
 	color: #3D3D3D;
 	border-radius: 0.8em;
 	padding: 1em;
-	margin: 2em 30em 2em 0;
+	margin: 2em 3em 2em 0;
 	-webkit-transition: background-color 0.2s ease-out;
 	transition: background-color 0.2s ease-out;
 }
@@ -102,13 +198,44 @@ nav a.back_button:hover, nav a.back_button:active, nav a.back_button:focus {
 	color: white;
 }
 
-section {
+
+
+/* etc. */
+.col-5of10 section {
 	border-bottom: dotted #D94E9C;
 	padding-bottom: 0.5em;
 	padding-top: 0.5em;
 	text-align: left;
+	border-width: 2px;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
+span.pointer {
+	cursor: pointer;
+}
+
+.service-section {
+	display: inline-block;
+	width: 75%;
+	border-bottom: dotted #D94E9C;
+	padding-bottom: 1em;
+}
+
+.center {
+	margin-left: auto;
+   margin-right: auto;
+   width: 15%;
+}
+
+form {
+	text-align: left;
+}
+
+
+
+
+/* button + onclick */
 button {
 	color: gray;
 	font-size: 0.8em;
@@ -166,6 +293,29 @@ button:hover {
 	transition: visibility 0.5s;
 }
 
+
+
+/* footer */
+.footer {
+	display: block;
+	clear: both;
+	position: relative;
+	z-index: 1;
+	height: 20em;
+	margin-top: 5em;
+	background-color: #E697C3;
+	color: white;
+	padding: 1em 3em 2em 3em;
+	font-size: 0.8em;
+}
+
+.footer.col-4of10 {
+	text-align: left;
+}
+
+
+
+/* progress bar */
 #progress_bar_location {
   background-color: #E6E6E6;
   height: 0.4em;
