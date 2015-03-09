@@ -4,32 +4,31 @@
 		<meta charset="utf-8">
 		<title>Style Guide</title>
 		<link href="css/main.css" rel="stylesheet">
-		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Hind:400,300' rel='stylesheet' type='text/css'>
+		<link href="css/grid.css" rel="stylesheet">
+    	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
 		<h1><span class="headColor">Style Guide</span></h1>
+		<h3>P02</h3>
 		<p>Katie Kim + Milly Hoi</p>
-		<nav>
-			<a href="#buttons">Buttons</a>
-			<a href="#options">Options</a>
-			<a href="#form">Form</a>
-			<a href="#text">Text</a>
-			<a href="#color">Color</a>
-			<a href="#image">Image</a>
-			<a href="#grouping">Navigation Bar</a>
-			<a href="#progress-bar">Progress Bar</a>
-		</nav>
+
+
+		<section id="grid">
+			<h2>Grid</h2>
+			<img src="img/grid.png" width="600" height="auto">
+		</section>
 
 		<section id="buttons">
 			<h2>Button</h2>
 			<h3>CSS selector</h3>
-			<p>'a.button'</p>
+			<p>'nav a.back_button'</p>
 			<h3>Code</h3>
-			<code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+			<code>&lt;a class="back_button" href="#"&gt;Button&lt;/a&gt;</code>
 			<h3>Rendered element</h3>
-			<a class="button" href="#">Button</a>
+			<nav class="col-2of10">
+				<a class="back_button" href="">Button</a>
+			</nav>
 		</section>
 
 		<section id="options">
@@ -38,9 +37,47 @@
 			<p>'.options'</p>
 			<h3>Code</h3>
 			<code>
+				&lt;a href="" class="options"&gt;
+					select options
+				&lt;/a&gt;
 			</code>
 			<h3>Rendered element</h3>
+			<nav class="col-2of10">
+				<a href="" class="options">
+					select options
+				</a>
+			</nav>
 			
+		</section>
+
+		<section id="onclick">
+			<h2>Onclick Menu</h2>
+			<h3>CSS selector</h3>
+			<p>'.onclick-menu'</p>
+			<h3>Code</h3>
+			<code>
+				&lt;section class="service-section"&gt;<br>
+				&lt;div tabindex="0" class="onclick-menu"&gt;<br>
+					&nbsp;&lt;span style="cursor:pointer">Manicure&lt;/span&gt;<br>
+		    		&nbsp;&lt;ul class="onclick-menu-content"&gt;<br>
+		        	&nbsp;&nbsp;&lt;li&gt;&lt;button onclick="alert('Manicure Selected')"&gt;Manicure - $21&lt;/button&gt;&lt;/li&gt;<br>
+		        	&nbsp;&nbsp;&lt;li&gt;&lt;button onclick="alert('French Manicure Selected')"&gt;French Manicure - $26&lt;/button&gt;&lt;/li&gt;<br>
+		        	&nbsp;&nbsp;&lt;li&gt;&lt;button onclick="alert('Gelish/Shellac Manicure Selected')">Gelish/Shellac Manicure - $44&lt;/button&gt;&lt;/li&gt;<br>
+		    		&nbsp;&lt;/ul&gt;<br>
+				&lt;/div&gt;<br>
+				&lt;/section&gt;
+			</code>
+			<h3>Rendered element</h3>
+			<section class="service-section">
+				<div tabindex="0" class="onclick-menu">
+					<span style="cursor:pointer">Manicure</span>
+		    		<ul class="onclick-menu-content">
+		        		<li><button onclick="alert('Manicure Selected')">Manicure - $21</button></li>
+		        		<li><button onclick="alert('French Manicure Selected')">French Manicure - $26</button></li>
+		        		<li><button onclick="alert('Gelish/Shellac Manicure Selected')">Gelish/Shellac Manicure - $44</button></li>
+		    		</ul>
+				</div>
+			</section>
 		</section>
 
 		<section id="form">
@@ -50,73 +87,151 @@
 			<h3>Code</h3>
 			<code>
 				&lt;form method="post" action="#"&gt;<br>
-			        &nbsp;Name <br>
-		          	&nbsp;&lt;input type="text" id="search" placeholder="First" size="20"&gt; <br>
-		          	&nbsp;&lt;input type="text" id="search" placeholder="Last" size="20"&gt; <br>
-		          	&nbsp;Mobile <Br>
-		          	&nbsp;&lt;input type="text" id="search" placeholder="Phone" size="40"&gt; <br>
-		          	&nbsp;E-mail <Br>
-		          	&nbsp;&lt;input type="text" id="search" placeholder="E-mail" size="40"&gt; <br>
-			        &nbsp;&lt;/div&gt;<br>
-	      		&lt;/form&gt;
-	      	</code>
+			       &nbsp;&lt;form id="personalinfo" action="process.php">
+					&nbsp;&lt;label for="firstname">Name *&lt;/label&gt;<br>
+					&nbsp;&nbsp;&lt;input name="firstname" id="firstname" type="text" placeholder="First" size = "16" class="form-sidebyside" required autofocus&gt;<br>
+					 &nbsp;&nbsp;&lt;input name="lastname" id="lastname" type="text" placeholder="Last" size="16" class="form-sidebyside" required&gt;<br>
+	      	&lt;/form&gt;
+	      </code>
 			<h3>Rendered element</h3>
+			<nav class="grid">
+	
+	<div class ="col-2of10">
+		<section>
+		<form id="personalinfo" action="process.php">
+			
+			<label for="firstname">Name *</label><br>
+			<input name="firstname" id="firstname" type="text" placeholder="First" size = "16" class="form-sidebyside" required autofocus>
+			<input name="lastname" id="lastname" type="text" placeholder="Last" size="16" class="form-sidebyside" required>
+			</br>	
+			</br>
+
+			<label for="email">Email *</label>
+			<input name="email" id="email" type="text" placeholder="123example@gmail.com" size="35" required> 
+			</br>
+			</br>	
+
+			<label for="phonenumber">Phone Number *</label>
+			<input name="phone-num" id="phonenumber" type="text" placeholder="(xxx)-xxx-xxxx" size="27" required>
+			</br>
+			</br>
 			<form method="post" action="#">
-		    <div class="input-wrapper">
-		    	Name
-		          	<input type="text" id="search" placeholder="First" size="20">
-		          	<input type="text" id="search" placeholder="Last" size="20"> <br>
-		        Mobile 	
-		          	<input type="text" id="search" placeholder="Phone" size="40"> <br>
-		        E-mail  	
-		          	<input type="text" id="search" placeholder="E-mail" size="40"> <br>
-		          	<input type="submit" value="search">
-		        </div>
-	      </form>
+				<div class="forms">
+					<label for="credit">Card Number *</label>
+					<input name="credit-card-num" id="credit" type="text" placeholder="Visa, MasterCard, Amex" size="28" required autofocus>
+				</div>
+				</br>	
+	
+			<div class="forms">
+
+			<label for="Expiry">Expiry Date *</label>
+			<p><select>
+				<option value = "0">Month</option>
+				<option value = "1">January</option>
+				<option value = "2">Febuary</option>
+				<option value = "3">March</option>
+				<option value = "4">April</option>
+				<option value = "5">May</option>
+				<option value = "6">June</option>
+				<option value = "7">July</option>
+				<option value = "8">August</option>
+				<option value = "9">September</option>
+				<option value = "10">October</option>
+				<option value = "11">November</option>
+				<option value = "12">December</option>			
+			</select>
+
+			<select>
+				<option value = "0">Year</option>
+				<option value = "1">2014</option>
+				<option value = "2">2015</option>
+				<option value = "3">2016</option>
+				<option value = "4">2017</option>
+				<option value = "5">2018</option>
+				<option value = "6">2019</option>
+				<option value = "7">2020</option>
+				<option value = "8">2021</option>
+				<option value = "9">2022</option>
+				<option value = "10">2023</option>
+				<option value = "11">2024</option>
+				<option value = "12">2025</option>
+			</select></p>
+				</div>
+			</form>
+			</form>
+			</section>
+		</div>
+
+		<div class="col-2of10">
+			&nbsp;
+		</div>
+
+				</br>
+				<label for="address">Billing Address *</label>
+				</br>
+					<input name="billaddress" type="text" placeholder="Suite Number" size="35" id="address" required autofocus>
+				</br>
+				</br>
+					<input class="margin-top" name="billaddress" type="text" placeholder="Street" size="35" id="address2" required autofocus>
+				</br>
+				</br>
+					<label for="city">City *</label>
+					<input name="cityaddress" type="text" size="30.5" id="city" required autofocus>
+				</br>
+				</br>
+					<label for="province">Province *</label>
+					<p>
+					<select>
+						<option value = "0">Alberta</option>
+						<option value = "1">British Columbia</option>
+						<option value = "2">Manitoba</option>
+						<option value = "3">New Brunswick</option>
+						<option value = "4">Newfoundland</option>
+						<option value = "5">Nova Scotia</option>
+						<option value = "6">Ontario</option>
+						<option value = "7">Prince Edward Island</option>
+						<option value = "8">Quebec</option>
+						<option value = "9">Saskatchewan</option>
+					</select> Canada
+					</p>
+					</br>
+					<label for="postalcode">Postal Code *</label>
+					<input name="cityaddress" type="text" size="6" id="postalcode" required autofocus>
+			</form>
+			</section>
+				</div>
+
+				</div>
+				<div class="col-3of10">
+					&nbsp;
+				</div>
 		</section>
 
 		<section id="text">
 			<h2>Text</h2>
-			<h3>CSS selector</h3>
-			<p>'.text'</p>
-			<h3>Code</h3>
-			<code>
-				&lt;h1 class="text"&gt;Heading&lt;/h1&gt;<br>
-				&lt;p class="text"&gt;ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz&lt;/p&gt;
-			</code>
-			<h3>Rendered element</h3>
-			<h1 class="text">Heading</h1>
-			<p class="text">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz</p>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<br>
+			<p>Started by Annie and Vivienne, together over 10 years of professional experience, who set out to create an unique nail salon experience that centers on QUALITY and SERVICE. MINOKO NAIL STUDIO is the result of 2 years of planning and hard work.
+			<br><br>
+			They researched better products making Minoko SMELL FREE, strive to stay in sync with LATEST NAIL PRODUCTS AND NAIL ART TRENDS in Europe and Asia (traveled to UK and Asia for research and training), and employed LABORATORY SANITATION STANDARDS that exceeds government requirements. Minoko Nail Studio is unlike anything you'll find anywhere else.
+			<br><br>
+			Minoko is the premier nail salon in Vancouver and one of few Bio Sculpture Certfied nail salons in Vancouver area. At Minoko you'll find a clean, relaxing and friendly environment. Make sure to check out our Japanese 3D Gel Nail Arts gallery, its our specialty!</p>
 		</section>
 
 		<section id="color">
 			<h2>Color</h2>
 			<svg height="100" width="100">
-  				<circle cx="50" cy="50" r="40" stroke="none" stroke-width="3" fill="#EA56A0" />
+  				<circle cx="50" cy="50" r="40" stroke="none" stroke-width="3" fill="#E697C3" />
 			</svg>
 			#EA56A0
 			<svg height="100" width="100">
-  				<circle cx="50" cy="50" r="40" stroke="none" stroke-width="3" fill="#991F5C" />
+  				<circle cx="50" cy="50" r="40" stroke="none" stroke-width="3" fill="#D94E9C" />
 			</svg>
 			#991F5C
-			<svg height="100" width="100">
-  				<circle cx="50" cy="50" r="40" stroke="none" stroke-width="3" fill="#E6E6E6" />
-			</svg>
-			#E6E6E6
 		</section>
 
-		<section id="image">
-			<h2>Image</h2>
-			<h3>CSS selector</h3>
-			<p>'.image'</p>
-			<h3>Code</h3>
-			<code>
-				&lt;img class="image" src="img/Dasies-BG.jpg" width="480" height="300" alt="Image from http://www.designlovefest.com/"&gt;
-			</code>
-			<h3>Rendered element</h3>
-			<img class="image" src="img/Dasies-BG.jpg" width="480" height="300" alt="Image from http://www.designlovefest.com/">
-			<img class="image" src="img/Avocados.jpg" width="480" height="300" alt="Image from http://www.designlovefest.com/">
-		</section>
 
 		<section id="grouping">
 			<h2>Navigation Bar</h2>
@@ -131,44 +246,40 @@
 				&lt;/nav&gt;
 			</code>
 			<h3>Rendered element</h3>
-			<nav>
-				<div class="col-nav">
-					<a class="navi" href="#buttons">Home</a>
-				</div>
-				<div class="col-nav">
-					<a class="navi" href="#form">Services</a>
-				</div>
-				<div class="col-nav">
-					<a class="navi" href="#buttons">Gallery</a>
-				</div>
-				<div class="col-nav">
-					<a class="navi" href="#buttons">Designers</a>
-				</div>
-				<div class="col-nav">
-					<a class="navi" href="#buttons">Book Appointment</a>
-				</div>
-				<div class="col-nav">
-					<a class="navi" href="#buttons">Locations</a>
-				</div>
-			</nav>
+				<nav class="grid">
+					<div id="navigation_container">
+
+						<div class="col-2">&nbsp;</div>
+						<div class="l-triangle-top"></div>
+			   			<div class="l-triangle-bottom"></div>
+						
+							<ul id="navigation">
+								<div class="col-1_25of10">
+									<li><a href="about.html">About</a></li>
+								</div>
+								<div class="col-1_25of10">
+									<li><a href="services-nav.html">Services</a></li>
+								</div>
+								<div class="col-1_25of10">
+									<li><a href="gallery.html">Gallery</a></li>
+								</div>
+								<div class="col-1_25of10">
+									<li><a href="promotions.html">Promotions</a></li>
+								</div>
+								<div class="col-1_25of10">
+									<li><a href="artists.html">Nail Designers</a></li>
+								</div>
+								<div class="col-1_25of10">
+									<li><a href="">Contact Us</a></li>
+								</div>
+							</ul>
+						</div>
+						<div class="r-triangle-top"></div>
+			         	<div class="r-triangle-bottom"></div>
+					</div>
+				</nav>
 		</section>
 
-		<section id="progress-bar">
-			<h2>Progress Bar</h2>
-			<h3>CSS selector</h3>
-			<p>'#progress_bar'</p>
-			<h3>Code</h3>
-			<code>
-				&lt;div id="progress_bar"&gt;<br>
-  					&nbsp;&lt;div&gt;&lt;/div&gt;<br>
-				&lt;/div&gt;
-			</code>
-			<h3>Rendered element</h3>
-			Location  >  Service  >  Designer  >  Date  >  Your Info  >  Confirmation
-			<div id="progress_bar">
-  				<div></div>
-			</div>
-		</section>
 
 	</body>
 </html>

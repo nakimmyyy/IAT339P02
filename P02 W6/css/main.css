@@ -6,15 +6,80 @@ body {
 	color: #3D3D3D;
 }
 
-.fixed {
-	position: fixed;
-	z-index: -1;
+/* table */
+table, th, td {
+    border: 1px dotted gray;
+}
+th, td {
+    padding: 0.8em;
+    text-align: center;
+    width: 4em;
+}
+th {
+	background-color: #E697C3;
+	color: white;
 }
 
-.background {
-	background-color: white;
+td {
+
+	-webkit-transition: background-color 0.3s;
+	transition: background-color 0.3s;
 }
 
+td:hover {
+	color: white;
+	background-color: #E697C3;
+}
+
+/* Ribbon Nav Menu */
+
+.l-triangle-top {
+   border-color: #E697C3 transparent transparent;
+   border-style: dashed;
+   border-width: 20px;
+   height: 0px;
+   width: 0px;
+   position: relative;
+   float: left;
+   top: 4px;
+   left: 60px;
+}
+
+.l-triangle-bottom {
+   border-color: transparent transparent #E697C3;
+   border-style: solid;
+   border-width: 20px;
+   height: 0px;
+   width: 0px;
+   position: relative;
+   float: left;
+   top: 3px;
+   left: 21px;
+}
+
+.r-triangle-top {
+   border-color: #E697C3 transparent transparent;
+   border-style: dashed;
+   border-width: 20px;
+   height: 0px;
+   width: 0px;
+   position: relative;
+   float: left;
+   right: 21px;
+   top: 0px;
+}
+ 
+.r-triangle-bottom {
+   border-color: transparent transparent #E697C3;
+   border-style: solid;
+   border-width: 20px;
+   height: 0px;
+   width: 0px;
+   position: relative;
+   float: left;
+   top: -1px;
+   right: 63px;
+}
 
 
 /* p */
@@ -32,6 +97,11 @@ section p {
 .col-6of10 p {
 	margin-top: 1.5em;
 	margin-left: 1em;
+}
+
+.col-5of10 p {
+	padding-bottom: 1em;
+	margin-left: 3em;
 }
 
 
@@ -59,13 +129,17 @@ li {
 	font-weight: bold;
 }
 
-.col-4of10 li {
+.col-3of10 li {
 	text-align: left;
 }
 
 
 
 /* headers */
+.col-6of10 h1 {
+	margin-top: 4em;
+}
+
 h2 {
 	font-weight: bold;
 	margin-top: 2em;
@@ -78,6 +152,10 @@ h3 {
 	text-align: center;
 }
 
+.col-7_5of10 h2, .col-7_5of10 h3 {
+	text-align: left;
+}
+
 .col-1of10 h3 {
 	text-align: center;
 	margin: 2em auto 2em auto;
@@ -86,6 +164,12 @@ h3 {
 .col-7 h3 {
 	text-align: right;
 	margin-right: 2.5em;
+}
+
+.col-5of10 h3 {
+	margin-left: 2.5em;
+	margin-top: 0.1em;
+	text-align: left;
 }
 
 .footer h3 {
@@ -115,9 +199,15 @@ section img {
 	float: left;
 }
 
-.col-8 img, .col-9 img {
+.col-9 img {
 	padding: 0;
-	margin-top: 3em;
+	margin-top: 1em;
+	margin-bottom: 3em;
+	max-width: 100%;
+}
+
+.col-8 img {
+	max-width: 100%;
 }
 
 .col-7 img {
@@ -135,6 +225,10 @@ section img {
 	float: left;
 }
 
+.col-3 img {
+	margin: 2em auto 0 auto;
+}
+
 
 
 /* nav */ 
@@ -142,23 +236,28 @@ nav a, nav a:visited {
 	display: inline-block;
 	background-color: #E697C3;
 	color: #FFFFFF;
-	padding: 0.5em;
+	padding: 0.7em;
 	width: 100%;
 	font-size: 0.9em;
 	margin: 0.2em 0.5em 0 0;
 	border: dashed white;
 	border-width: 1px;
 	border-radius: 2em;
+	border-spacing: 1px;
 	text-decoration: none;
-	-webkit-transition: background-color 0.2s;
-	transition: background-color 0.2s;
+	-webkit-transition: background-color 0.3s;
+	transition: background-color 0.3s;
 }
 
 nav a.book_appointment {
 	background-color: #D94E9C;
 }
 
-nav a:hover, nav a:focus, nav a:active {
+nav a.selected {
+	background-color: #DB0B86;
+}
+
+nav a:hover, nav a:focus {
 	background-color: #DB0B86;
 	color: white;
 }
@@ -232,6 +331,10 @@ form {
 	text-align: left;
 }
 
+.fixed {
+	position: fixed;
+	z-index: -1;
+}
 
 
 
@@ -307,10 +410,6 @@ button:hover {
 	color: white;
 	padding: 1em 3em 2em 3em;
 	font-size: 0.8em;
-}
-
-.footer.col-4of10 {
-	text-align: left;
 }
 
 

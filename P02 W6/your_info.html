@@ -1,51 +1,62 @@
-<!-- Your Info -->
 <!doctype html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Booking</title>
-
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Nail Studio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<script src="js/scripts.js"></script>
 
-  </head>
+<!-- Logo -->
+<div id="logo">	
+	<a href="homepage.html"><img src="img/logo.png" alt="logo" height="90" width="90"><h1>minoko</h1></a>
+	<p>N A I L  S T U D I O</p>
+</div>
 
-  <body background="img/bgimg.png">
-	<div class="center">
-		<a href="homepage.html"><img src="img/Minoko.jpg" width="200" height="176"></a>
-	</div>
-	
+<!-- Navigation Menu -->
+	<div class="dashed-lines"></div>
+
 	<nav class="grid">
-		<div class="col-1_25of10">
-			&nbsp;
-		</div>
-		<div class="col-1_25of10">
-			<a href="about.html">About</a>
-		</div>
-		<div class="col-1_25of10">
-			<a href="services-nav.html">Services</a>
+		<div id="navigation_container">
+
+			<div class="l-triangle-top"></div>
+   			<div class="l-triangle-bottom"></div>
+			
+				<ul id="navigation">
+					<div class="col-7of10">
+						<li><a href="">About</a></li>
+					</div>
+					<div class="col-7of10">
+						<li><a href="">Services</a></li>
+					</div>
+					<div class="col-7of10">
+						<li><a href="">Gallery</a></li>
+					</div>
+					<div class="col-7of10">
+						<li><a href="">Promotions</a></li>
+					</div>
+					<div class="col-7of10">
+						<li><a href="">Nail Designers</a></li>
+					</div>
+					<div class="col-7of10">
+						<li><a href="">Contact Us</a></li>
+					</div>
+				</ul>
+				
 			</div>
-		<div class="col-1_25of10">
-			<a href="gallery.html">Gallery</a>
-			</div>
-		<div class="col-1_25of10">
-			<a href="">Nail Designers</a>
-		</div>
-		<div class="col-1_25of10">
-			<a href="book_appointment.html">Promotions</a>
-		</div>
-		<div class="col-1_25of10">
-			<a href="book_appointment.html" class="book_appointment">Book Appointment</a>
-		</div>
-		<div class="col-1_25of10">
-			&nbsp;
+			<div class="r-triangle-top"></div>
+         	<div class="r-triangle-bottom"></div>
 		</div>
 	</nav>
+
+
+</br>
+</br>
+</br> 
 
 	<h2>Online booking</h2>
 		Location  >  Service  >  Designer  >  Date  >  Your Info  >  Confirmation
@@ -53,37 +64,119 @@
 				<div></div>
 		</div>
 
-	<h3>Enter Your Information</h3>
+<h3>Enter Your Personal Information</h3>
 
+<nav class="grid">
+	
+	<div class ="col-2of10">
+		<section>
+		<form id="personalinfo" action="process.php">
+			
+			<label for="firstname">Name *</label><br>
+			<input name="firstname" id="firstname" type="text" placeholder="First" size = "16" class="form-sidebyside" required autofocus><br>
+			<input name="lastname" id="lastname" type="text" placeholder="Last" size="16" class="form-sidebyside" required>
+			</br>	
+			</br>
 
-	<nav class="grid">
+			<label for="email">Email *</label>
+			<input name="email" id="email" type="text" placeholder="123example@gmail.com" size="35" required> 
+			</br>
+			</br>	
+
+			<label for="phonenumber">Phone Number *</label>
+			<input name="phone-num" id="phonenumber" type="text" placeholder="(xxx)-xxx-xxxx" size="27" required>
+			</br>
+			</br>
+			<form method="post" action="#">
+				<div class="forms">
+					<label for="credit">Card Number *</label>
+					<input name="credit-card-num" id="credit" type="text" placeholder="Visa, MasterCard, Amex" size="28" required autofocus>
+				</div>
+				</br>	
+	
+			<div class="forms">
+
+			<label for="Expiry">Expiry Date *</label>
+			<p><select>
+				<option value = "0">Month</option>
+				<option value = "1">January</option>
+				<option value = "2">Febuary</option>
+				<option value = "3">March</option>
+				<option value = "4">April</option>
+				<option value = "5">May</option>
+				<option value = "6">June</option>
+				<option value = "7">July</option>
+				<option value = "8">August</option>
+				<option value = "9">September</option>
+				<option value = "10">October</option>
+				<option value = "11">November</option>
+				<option value = "12">December</option>			
+			</select>
+
+			<select>
+				<option value = "0">Year</option>
+				<option value = "1">2014</option>
+				<option value = "2">2015</option>
+				<option value = "3">2016</option>
+				<option value = "4">2017</option>
+				<option value = "5">2018</option>
+				<option value = "6">2019</option>
+				<option value = "7">2020</option>
+				<option value = "8">2021</option>
+				<option value = "9">2022</option>
+				<option value = "10">2023</option>
+				<option value = "11">2024</option>
+				<option value = "12">2025</option>
+			</select></p>
+				</div>
+			</form>
+			</form>
+			</section>
+		</div>
+
 		<div class="col-2of10">
 			&nbsp;
 		</div>
-				<div class="col-2of10">
-					<ul>
-						<li>Name</li>
-						<li>Mobile</li>
-						<li>E-mail</li>
-						<li>Address</li>
-					</ul>
+
+				</br>
+				<label for="address">Billing Address *</label>
+				</br>
+					<input name="billaddress" type="text" placeholder="Suite Number" size="35" id="address" required autofocus>
+				</br>
+				</br>
+					<input class="margin-top" name="billaddress" type="text" placeholder="Street" size="35" id="address2" required autofocus>
+				</br>
+				</br>
+					<label for="city">City *</label>
+					<input name="cityaddress" type="text" size="30.5" id="city" required autofocus>
+				</br>
+				</br>
+					<label for="province">Province *</label>
+					<p>
+					<select>
+						<option value = "0">Alberta</option>
+						<option value = "1">British Columbia</option>
+						<option value = "2">Manitoba</option>
+						<option value = "3">New Brunswick</option>
+						<option value = "4">Newfoundland</option>
+						<option value = "5">Nova Scotia</option>
+						<option value = "6">Ontario</option>
+						<option value = "7">Prince Edward Island</option>
+						<option value = "8">Quebec</option>
+						<option value = "9">Saskatchewan</option>
+					</select> Canada
+					</p>
+					</br>
+					<label for="postalcode">Postal Code *</label>
+					<input name="cityaddress" type="text" size="6" id="postalcode" required autofocus>
+			</form>
+			</section>
 				</div>
-				<div class="col-5of10">
-					<form method="post" action="#">
-						<br>
-					 <input type="text" id="search" placeholder="First" size="19">
-					 <input type="text" id="search" placeholder="Last" size="19"><br> <br>
-					 <input type="text" id="search" placeholder="Phone" size="40"> <br><br>
-					 <input type="text" id="search" placeholder="E-mail" size="40"><br><br>
-					 <input type="text" id="search" placeholder="Address" size="40">
-					</form>
+
 				</div>
 				<div class="col-3of10">
 					&nbsp;
 				</div>
-		<div class="col-1of10">
-			<a href="confirm.html" class="back_button">Confirm</a>
-		</div>
 	</nav>
 
 	<section class="footer">

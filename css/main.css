@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   padding: 2rem;
   font-size: 16px;
   letter-spacing: 1px;
@@ -14,17 +14,17 @@ body {
 section {
   margin: 1em 0;
   padding: 0.5em 0;
-  border-top: dotted #991F5C;
+  border-top: dotted #DB0B86;
   clear: both;
 }
 
 section h2 {
-  color: #EA56A0;
+  color: #DB0B86;
 }
 
 section h3 {
   margin-bottom: 0.3em;
-  color: #991F5C;
+  color: #DB0B86;
 }
 
 section p {
@@ -38,19 +38,37 @@ section code {
   letter-spacing: 0px;
 }
 
-nav a {
+
+/* headings */
+#text h2 {
+  font-weight: bold;
+  margin-top: 2em;
+}
+
+#text h3 {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #DB0B86;
+}
+
+#text h4 {
+  font-weight: bold;
+  margin-bottom: 0.01em;
+  color: #DB0B86;
+}
+
+#grouping nav a {
   display: inline-block;
   color: white;
-  background-color: #EA56A0;
-  padding: 0.3em 0.5em; 
-  border-radius: 0.5em;
+  background-color: #E697C3;
+  padding: 1em;
   text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
 
-a:hover, a:focus {
-  background-color: #991F5C;
+#grouping a:hover, a:focus {
+  background-color: #D94E9C;
 }
 
 a.button {
@@ -67,7 +85,7 @@ a.button {
   transition: background-color 0.5s ease-out;
 }
 a.button:hover, a.button:focus {
-  background-color: #991F5C;
+  background-color: #D94E9C;
 }
 
 .options {
@@ -91,12 +109,6 @@ form {
   
 }
 
-.text {
-  font-family: 'Hind', sans-serif;
-  font-weight: thin;
-  padding: 0;
-}
-
 .image {
   float: left;
   margin: 1em;
@@ -104,17 +116,202 @@ form {
   height: auto;
 }
 
-a.navi {
+
+/* nav */ 
+nav a, nav a:visited {
   display: inline-block;
-  float: left;
-  margin: 0.5em 0.2em 2em 0;
-  padding: 0.4em 0 0.4em 0;
-  width: 14%;
-  color: #FFF;
-  border-radius: 0;
-  text-align: center;
+  background-color: #E697C3;
+  color: #FFFFFF;
+  padding: 0.6em;
+  width: 99%;
   font-size: 0.8em;
+  margin: 0.2em 0.5em 0 0;
+  border-width: 1px;
+  border-spacing: 1px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
+
+nav a.book_appointment {
+  background-color: #D94E9C;
+}
+
+nav a.selected {
+  background-color: #DB0B86;
+}
+
+nav a:hover, nav a:focus {
+  background-color: #DB0B86;
+  color: white;
+}
+
+nav a.options {
+  padding: 6em 0 6em 0;
+  background-color: #FFF;
+  color: #3D3D3D;
+  border-radius: 0.8em;
+  border-style: solid;
+  border-color: #E697C3;
+  border-width: 0.1em;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+nav a.options:hover, nav a.options:active, nav a.options:focus {
+  background-color: #E697C3;
+  color: white;
+}
+
+nav a.back_button {
+  display: inline-block;
+  background-color: #E6E6E6;
+  color: #3D3D3D;
+  border-radius: 0.8em;
+  padding: 1em;
+  margin: 2em 3em 2em 0;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+nav a.back_button:hover, nav a.back_button:active, nav a.back_button:focus {
+  background-color: #E697C3;
+  color: white;
+}
+
+
+/* button + onclick */
+button {
+  color: gray;
+  font-size: 0.8em;
+  display: inline-block;
+  background-color: white;
+  border: double;
+  border-color: #E697C3;
+  width: 25em;
+  height: 3em;
+  margin-left: 5em;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+button:hover {
+  background-color: #E697C3;
+  color: white;
+}
+
+.onclick-menu {
+  position: relative;
+  display: inline-block;
+  padding-left: 2em;
+  padding-right: 15em;
+  background-color: white;
+  color: gray;
+}
+
+.onclick-menu:before {
+  content: " ";
+}
+
+.onclick-menu:focus {
+    /* clicking on label should toggle the menu */
+    pointer-events: none;
+    outline: none;
+    color: #DB0B86;
+}
+
+.onclick-menu:focus .onclick-menu-content {
+  /*  opacity is 1 in opened state (see below) */
+    opacity: 1;
+    visibility: visible;
+
+    /* don't let pointer-events affect descendant elements */
+    pointer-events: auto;
+
+}
+
+.onclick-menu-content {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.5s;
+}
+
+.service-section {
+  display: inline-block;
+  width: 75%;
+  border-bottom: dotted #D94E9C;
+  border-width: 2px;
+  padding-bottom: 1em;
+}
+
+#form li {
+  list-style-type: none;
+  text-align: left;
+}
+
+#navigation li {
+  list-style: none;
+  text-decoration: none;
+}
+
+#navigation li a {
+  text-decoration: none;
+}
+
+/* Ribbon Nav Menu */
+
+.l-triangle-top {
+   border-color: #E697C3 transparent transparent;
+   border-style: dashed;
+   border-width: 20px;
+   height: 0px;
+   width: 0px;
+   position: relative;
+   float: left;
+   top: 0px;
+   left: 61px;
+}
+
+.l-triangle-bottom {
+   border-color: transparent transparent #E697C3;
+   border-style: solid;
+   border-width: 20px;
+   height: 0px;
+   width: 0px;
+   position: relative;
+   float: left;
+   top: 0px;
+   left: 21px;
+}
+
+.r-triangle-top {
+   border-color: #E697C3 transparent transparent;
+   border-style: dashed;
+   border-width: 20px;
+   height: 0px;
+   width: 0px;
+   position: relative;
+   float: left;
+   right: 22px;
+   top: 0px;
+}
+ 
+.r-triangle-bottom {
+   border-color: transparent transparent #E697C3;
+   border-style: solid;
+   border-width: 20px;
+   height: 0px;
+   width: 0px;
+   position: relative;
+   float: left;
+   top: 0px;
+   right: 63px;
+}
+
 
 .grid {
   content: "";
@@ -122,20 +319,4 @@ a.navi {
   clear: both;
 }
 
-.col-nav {
-  width: 100%;
-}
 
-#progress_bar {
-  background-color: #E6E6E6;
-  height: 0.5em;
-  width: 42.5%;
-  margin-top: 0.4em;
-}
-
-#progress_bar > div {
-  background-color: #EA56A0;
-  width: 30%;
-  height: 0.5em;
-  margin-top: 0.4em;
-}
